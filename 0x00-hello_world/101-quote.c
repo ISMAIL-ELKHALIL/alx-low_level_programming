@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unistd.h>/* For the write function */
 /**
  * main -  program that prints ==>
  *exactly and that piece of art is useful" - Dora Korpar, 2015-10-19,
