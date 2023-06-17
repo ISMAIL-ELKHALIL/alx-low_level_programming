@@ -20,6 +20,7 @@ int main(void)
 		{
 			putchar((number1 / 10) + '0');
 			putchar((number2 % 10) + '0');
+			putchar(' ');
 			putchar((number1 / 10) + '0');
 			putchar((number2 % 10) + '0');
 		if (number1 == 98 && number2 == 99)
