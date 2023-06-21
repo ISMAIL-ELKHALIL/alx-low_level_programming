@@ -9,12 +9,12 @@
 int main(void)
 {
 	int counter;
-	long fibo1 = 0, fibo2 = 1, sum;
+	int fibo1 = 0, fibo2 = 1, sum;
 
 	for (counter = 0; counter < 50; counter++)
 	{
 		sum = fibo1 + fibo2;
-		printf("%l", sum);
+		printf("%d", sum);
 
 		fibo1 = fibo2;
 		fibo2 = sum;
