@@ -19,7 +19,7 @@ int main(void)
 		fibo1 = fibo2;
 		fibo2 = sum;
 
-		if (counter == 50)
+		if (counter == 49)
 			printf("\n");
 		else
 			printf(", ");
