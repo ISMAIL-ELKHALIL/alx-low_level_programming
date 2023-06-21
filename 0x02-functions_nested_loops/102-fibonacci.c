@@ -9,17 +9,17 @@
 int main(void)
 {
 	int counter;
-	int fibo1 = 0, fibo2 = 1, sum;
+	long int fibo1 = 0, fibo2 = 1, sum;
 
 	for (counter = 0; counter < 50; counter++)
 	{
 		sum = fibo1 + fibo2;
-		printf("%d", sum);
+		printf("%ld", sum);
 
 		fibo1 = fibo2;
 		fibo2 = sum;
 
-		if (counter == 49)
+		if (counter == 50)
 			printf("\n");
 		else
 			printf(", ");
