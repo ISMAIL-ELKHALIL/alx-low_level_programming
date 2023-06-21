@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long int  fibo1 = 0, fibo2 = 1, sum, total;
+	int fibo1 = 0, fibo2 = 1, sum, total;
 
 	do {
 		sum = fibo1 + fibo2;
@@ -16,12 +16,13 @@ int main(void)
 			break;
 
 		if ((sum % 2) == 0)
+		{
 			total += sum;
-
+		}
 		fibo1 = fibo2;
 		fibo2 = sum;
 	} while (1);
-	printf("%ld\n", sum);
+	printf("%d\n", total);
 
 	return (0);
 }
