@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "_putchar.c"
 /**
   * print_diagonal - Fonction that draws a diagonal line,
   * in the terminal
@@ -9,7 +9,7 @@
 
 void print_diagonal(int n)
 {
-	int j,i;
+	int j, i;
 
 	if (n > 0)
 	{
