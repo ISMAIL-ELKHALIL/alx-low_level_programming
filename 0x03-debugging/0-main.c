@@ -1,13 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* main - Program that tests the  function  positive_or_negative
-* Return: Alwyas 0 (Success)
+* main - causes an infinite loop
+* Return: 0
 */
 int main(void)
 {
-	int number;
+	int i;
 
-	number = 0;
-	positive_or_negative(number);
+	printf("Infinite loop incoming :(\n");
+	i = 0;
+/*while (i < 10)*/
+/*{*/
+/*putchar(i);*/
+/*}*/
+	printf("Infinite loop avoided! \\o/\n");
 	return (0);
 }
