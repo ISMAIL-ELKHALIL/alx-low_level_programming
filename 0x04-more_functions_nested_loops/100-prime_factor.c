@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * Main - Program that finds and prints the largest prime factor
+  * main - Program that finds and prints the largest prime factor
   *of the number 612852475143
   * Return: Always 0 (Success)
   */
@@ -30,6 +30,7 @@ int main(void)
 		lp = num;
 	}
 
-	printf("%ld\n", lp);
+	printf("%ld", lp);
+	printf("\n");
 	return (0);
 }
