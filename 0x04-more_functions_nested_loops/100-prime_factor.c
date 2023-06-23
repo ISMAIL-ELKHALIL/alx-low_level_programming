@@ -25,6 +25,11 @@ int main(void)
 			lp = tlp;
 		}
 	}
+	if (num > lp)
+	{
+		lp = num;
+	}
+
 	printf("%ld\n", lp);
 	return (0);
 }
