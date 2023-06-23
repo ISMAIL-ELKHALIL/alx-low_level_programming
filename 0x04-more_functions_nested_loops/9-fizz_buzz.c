@@ -3,7 +3,7 @@
 
 /**
   * main - A program that prints number form 0 -> 100,
-  *	followed by a new line. But for multiples of three print Fizz 
+  *	followed by a new line. But for multiples of three print Fizz
   *	instead of the number and for the multiples of five print Buzz.
   *	For numbers which are multiples of both three and five print FizzBuzz
   * Return: Always 0 (Success)
@@ -13,22 +13,24 @@ int main(void)
 {
 	int i;
 
-	for (i = 1;i <= 100;i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if((i % 3 == 0) && (i % 5 == 0))
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
 			printf("Fizz Buzz ");
-		} else if (i % 3 == 0)
+		} else
+			if (i % 3 == 0)
 			{
 				printf("Fizz ");
-			}else if(i % 5 == 0)
+			} else
+				if (i % 5 == 0)
 				{
 					printf("Buzz ");
-				}else 
+				} else
 				{
-					printf("%d ",i);
+					printf("%d ", i);
 				}
 	}
 printf("\n");
-return 0;
+return (0);
 }
