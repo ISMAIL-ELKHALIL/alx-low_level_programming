@@ -6,14 +6,16 @@
  */
 void print_number(int n)
 {
+	unsigned int interger = n;
+
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		interger = -interger;
 	}
-	if ((n / 10) > 0)
-	{
-		print_number(n / 10);
-	}
-	_putchar(n % 10 + '0');
+
+	if ((interger / 10) > 0)
+		print_number(interger / 10);
+
+	_putchar((interger % 10) + '0');
 }
