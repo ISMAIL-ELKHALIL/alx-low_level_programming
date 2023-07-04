@@ -7,35 +7,29 @@
   * Return: length of the prefix substring OR
   * length of the entire string as it consists only of bytes from accept
   */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int found;
-
-	while (*s != '\0')
+	unsigned int length = 0;
+	int found = 1;
+	char *a;
+	while (*s && found)
 	{
 		found = 0;
-		for (int i = 0; accept[i] != '\0'; i++)
+		a = accept;
+		while (*a)
 		{
-			if (*s == accept[i])
+			if (*s == *a)
 			{
 				found = 1;
 				break;
 			}
+			a++;
 		}
-
-		if (found == 0)
+		if (found)
 		{
-			return (count);
-			/* Return the length of the prefix substring */
+			length++;
+			s++;
 		}
-
-		count++;
-		s++;
 	}
-
-	return (count);
-	/* Return the length of the entire string */
-	/*as it consists only of bytes from accept */
+	return length;
 }
