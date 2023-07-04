@@ -12,6 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int length = 0;
 	int found = 1;
 	char *a;
+
 	while (*s && found)
 	{
 		found = 0;
@@ -31,5 +32,5 @@ unsigned int _strspn(char *s, char *accept)
 			s++;
 		}
 	}
-	return length;
+	return (length);
 }
