@@ -5,18 +5,10 @@
   */
 void _print_rev_recursion(char *s)
 {
-	int i;
-
-	i = 0;
-	if (*s != '\0')
+	if (*s == '\0')
 	{
-	s++;
-	i++;
-	_print_rev_recursion(s);
+		return;  /* base case: end of string reached*/
 	}
-	while (i != 0)
-	{
-		_putchar(*s);
-		i--;
-	}
+	_print_rev_recursion(s + 1);  /* recursive call with next character*/
+	_putchar(*s);
 }
