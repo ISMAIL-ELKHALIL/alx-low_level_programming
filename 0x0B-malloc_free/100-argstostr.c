@@ -65,7 +65,7 @@ char *argstostr(int ac, char **av)
 			/* +1 for the newline character */
 	}
 	/* Allocate memory for the concatenated string */
-	str = (char *)malloc(total_len * sizeof(char));
+	str = (char *)malloc(total_len * sizeof(char) + 1);
 	if (str == NULL)
 		return (NULL);
 	index = 0;
